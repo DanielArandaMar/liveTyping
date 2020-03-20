@@ -1,0 +1,164 @@
+div
+    &.options
+        background: $black
+        z-index: 1000
+        padding: 15px
+        width: 100%
+        position: fixed
+        bottom: 0px
+        width: 100%
+        .container-fluid
+            padding: 0px
+            .options-out
+                .options
+                    a
+                        color: #ffffff
+                        font-size: $fontSizeOptions
+                        text-decoration: none
+            .options-in
+                z-index: 1000
+                .options
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    .image-user
+                        width: 3%
+                        img
+                            width: 100%
+                            vertical-align: top
+                            border-radius: 100%
+                    .info
+                        z-index: 1000
+                        color: #ffffff
+                        font-size: $fontSizeOptions
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        .names
+                            display: flex
+                            flex-direction: column
+                            .nickname
+                                font-size: 13px
+                        .more-options
+                            cursor: pointer
+                    .menu-items
+                        width: 30%
+                        a
+                            color: #ffffff
+                            text-decoration: none
+                            margin: 0px 20px
+                            cursor: pointer
+                            &.menu-item-no-touch
+                                cursor: auto
+                        .activePurple
+                            border-bottom: 1px solid #ffffff
+                        .btn-drop-menu-responsive
+                            display: inline-block
+                            background: #000000
+                            color: #fff
+                            border: none
+                            outline: none
+                            float: right
+                            margin-left: 10%
+                        .dropdown-menu
+                            a
+                                text-decoration: none
+                                &:focus
+                                    text-decoration: none
+                                    background: #fff
+                                &:hover
+                                    background: #ffffff
+                            .activeDisabled
+                                color: #BEBEBE !important
+   
+
+
+// Menu oculto y aparicion del boton responsive
+@media screen and (min-width: 0px) and (max-width: 720px)
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                        .menu-items
+                            a
+                                &.responsive-a
+                                    display: none
+
+@media screen and (min-width: 719px)
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                            width: 5%
+                        .menu-items
+                            .btn-drop-menu-responsive
+                                display: none
+                            a
+                                &.responsive-a
+                                    display: inline-block
+
+
+// Adaptar la imagen del menu
+
+
+@media screen and (min-width: 344px) and (max-width: 544px)
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                            width: 10%
+
+@media screen and (min-width: 544px) and (max-width:768px)
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                            width: 7%
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                            width: 5%
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                            width: 4%
+
+@media screen and (min-width: 1200px) 
+    div
+        &.options
+            .container-fluid
+                .options-in
+                    .options
+                        .image-user
+                            width: 3%
+
+
+
+
+
+
+
+            
+
+                            
+                  
+                    
+                        

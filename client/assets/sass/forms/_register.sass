@@ -1,0 +1,38 @@
+.form-container
+    width: 50%
+    margin: 1.5% auto
+    border-top: 2px solid $purple
+    padding: 10px
+    &.no-purple-border
+        border-top: none
+    h5
+        font-weight: 500
+        margin-bottom: 20px
+    form
+        .group
+            display: flex
+            flex-direction: column
+            margin-bottom: 10px
+            input
+                border: none
+                border-bottom: 1px solid rgba(#000000, 0.2)
+                padding: 5px
+        input[type="submit"]
+            width: 100%
+            border: none
+            background: $purple
+            color: #ffffff
+            margin-top: 10px
+            padding: 5px
+.red-message
+    color: $dangerColor
+
+@media screen and (max-width: 744px)
+    .form-container
+        width: 85%
+
+@media screen and (max-width: 450px)
+    .form-container
+        width: 90%
+        margin: 5% auto
+

@@ -1,0 +1,68 @@
+*
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    outline: none
+    font-family: 'Roboto', 
+
+$purple: #811CD8
+$red: #F30000
+$black: #000000
+$fontSize: 18px
+$fontSizeOptions: 15px // Tamaño de letra para la seccion de options
+
+$dangerColor: #d9534f
+$successColor: #5cb85c
+$primaryColor: #0275d8
+$greenOnline: #4DDF88
+
+// Botones personalizados
+a
+    &.btn-purple
+        text-decoration: none
+        color: #ffffff
+        outline: none
+        border: none
+.btn-purple 
+    background: $purple
+    color: #ffffff
+    text-align: center
+    text-decoration: none
+    outline: none
+    border: none
+    cursor: pointer
+    &:focus
+        border: none
+        outline: none
+button
+    &.btn-send
+        border: none
+        outline: none
+        &:focus
+            border: none
+            outline: none
+
+
+// Configuracion del contenedor del los componentes
+main
+    display: inline-block
+    padding: 4% 0
+@media screen and (max-width: 1200px)
+    main
+        padding: 7% 0
+@media screen and (max-width: 650px)
+    main
+        padding: 10% 0
+@media screen and (max-width: 470px)
+    main
+        padding: 15% 5%
+
+// Configuracion del spinner default
+.spinn
+    color: $purple
+.spinn-register-login
+    margin-top: 30%
+
+// Funcionalidades extras
+.green-online
+    color: $greenOnline

@@ -1,0 +1,50 @@
+.chats
+    padding: 5px
+    width: 100%
+    margin: 5% auto
+    div
+        &.chat
+            border: 1px solid rgba(#000000, 0.1)
+            text-decoration: none
+            color: $black
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            padding: 5px 15px
+            .image-chat
+                width: 7%
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 100%
+            .info-chat
+                display: flex
+                flex-direction: column
+                align-items: center
+                .green
+                    color: #4DDF88
+                    font-weight: 500
+                .visibility
+                    font-size: 14px
+                    float: right
+
+.title-chats
+    font-size: 24px
+
+.message-no-groups
+    width: 45%
+    margin: 15% auto
+    text-align: center
+
+
+@media screen and (max-width: 550px)
+    .chats
+        div
+            &.chat
+                border: none
+                border-left: 1px solid rgba(#000000, 0.2)
+                margin: 5% 0
+                flex-direction: column
+                .image-chat
+                    width: 20%

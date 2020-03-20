@@ -1,0 +1,30 @@
+.alert-custom
+    margin: auto
+    padding: 10px
+    font-weight: 300
+    font-size: 14px
+    &.register
+        width: 50%
+        a
+            &.link-login
+                text-decoration: underline
+                color: #ffffff
+                font-weight: 500
+
+.alert-red
+    background: $dangerColor
+    color: #ffffff
+.alert-green
+    background: $successColor
+    color: #ffffff
+
+@media screen and (max-width: 744px)
+    .alert-custom
+        &.register
+            width: 85%
+
+@media screen and (max-width: 450px)
+    .alert-custom
+        &.register
+            width: 90%
+      

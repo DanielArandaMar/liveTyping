@@ -1,0 +1,135 @@
+.container
+    position: relative
+    .form-message
+        margin-top: 3%
+        .form
+            input
+                width: 100%
+                border: none
+                border-top: 1px solid rgba(#000000, 0.2)
+    .row
+        .col-lg-12
+            button
+                &.btn-refresh
+                    outline: none
+            button
+                &.arrow
+                    border: none
+                    outline: none
+                    background: #fff
+                    .icon
+                        color: #000000
+    .row
+        .messages
+            margin-top: 3%
+            height: 600px
+            overflow-x: hidden
+            overflow-y: scroll
+            padding: 10px
+            padding-bottom: 30px
+            .message
+                font-size: 14px
+                margin: 1.5% 0
+                display: flex
+                flex-direction: row
+                align-items: center
+                .image-user-message
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-end
+                    margin: 0px
+                    padding: 0px
+                    .image-user
+                        width: 35%
+                        img
+                            width: 100%
+                            vertical-align: top
+                            border-radius: 100%
+                .nick-message
+                    padding: 0px
+                    margin: 0px
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    .nickname
+                        font-weight: 600
+                        text-align: center
+                        overflow: hidden
+                .body-message
+                    margin: 0px
+                    padding: 0px
+                    .text
+                        margin-left: 2%
+
+// Modificar estilos del scroll de mensajes
+.container
+    .row
+        .messages::-webkit-scrollbar
+            width: 5px
+            background: rgba(0,0,0,0.1)
+        .messages::-webkit-scrollbar-thumb
+            background: rgba(#000000, 0.2)
+            border-radius: 7px
+
+@media screen and (min-width: 250px) and (max-width: 544px)
+    .container
+        .row
+            .messages::-webkit-scrollbar
+                width: 2px
+                background: rgba(0,0,0,0)
+            .messages::-webkit-scrollbar-thumb
+                background: rgba(#000000, 0.3)
+                border-radius: 7px
+
+
+@media screen and(max-width: 1800px)
+    .container
+        .row
+            .messages
+                height: 400px
+                
+@media screen and(max-width: 780px)
+    .container
+        .row
+            .col-lg-12
+                button
+                    &.arrow
+                        font-size: 14px
+                span
+                    &.btn-refresh
+                        font-size: 12px
+                    &.number-people
+                        font-size: 12px
+            .messages
+                margin-top: 6%
+                .message
+                    flex-direction: column
+                    margin: 6% 0
+                    .image-user-message
+                        display: flex
+                        flex-direction: row
+                        justify-content: flex-start
+                        .image-user
+                            width: 10%
+                    .nick-message
+                        display: flex
+                        flex-direction: row
+                        justify-content: flex-start
+                    .body-message
+                        margin-left: 2%
+
+
+
+
+                
+
+
+                   
+                
+                    
+                    
+                        
+
+               
+                    
+                        
