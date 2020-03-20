@@ -56,7 +56,7 @@ app.use('/api', user_routes);
 app.use('/api', chat_routes);
 app.use('/api', message_routes);
 app.get('*', function(req, res, next){
-    res.senFile(path.resolve('client/index.html'));
+    res.sendFile(path.resolve('client/index.html'));
 });
 
 // EXPORTAR
